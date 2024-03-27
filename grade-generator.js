@@ -1,3 +1,5 @@
+// a function calculateGrade: use marks to assign a grade
+
 function calculateGrade(marks){
     let calculateGrade
     if(marks>79){
@@ -17,8 +19,13 @@ function calculateGrade(marks){
 
 
 }
+// validate Marks are from 0 to 100. return error message if validation fails
 function validateMarks(marks){
     if(marks>0 && marks<=100){ 
         return calculateGrade(marks)
-    } else{enter grade marks}
-}
+    } else{return"enter grade marks"}
+} 
+console.log(validateMarks(60))
+console.log(validateMarks(160))
+
+
